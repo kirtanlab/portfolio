@@ -1,0 +1,4 @@
+background-color = #795548
+button background color and text color = #795548 , white
+text color = white
+button hover background color and text color = white , black
