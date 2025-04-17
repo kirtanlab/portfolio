@@ -1,0 +1,1158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Kirtan Prajapati | AI Engineer and FullStack Developer</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Kirtan Prajapati - AI Engineer and FullStack Developer specializing in Python, React, and Machine Learning technologies" />
+  <meta name="author" content="Kirtan Prajapati" />
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Kirtan Prajapati | AI Engineer and FullStack Developer" />
+  <meta property="og:description" content="AI Engineer and FullStack Developer" />
+  <meta property="og:type" content="website" />
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  
+  <style>
+    :root {
+      --primary: #2d8ca3;
+      --secondary: #334155;
+      --light: #f8fafc;
+      --dark: #0f172a;
+      --accent: #f97316;
+      --text: #334155;
+      --border: #e2e8f0;
+    }
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    }
+    
+    body {
+      background-color: var(--light);
+      color: var(--text);
+      line-height: 1.6;
+      font-size: 16px;
+    }
+    
+    a {
+      color: var(--primary);
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+    
+    a:hover {
+      color: var(--accent);
+    }
+    
+    h1, h2, h3, h4, h5, h6 {
+      font-weight: 600;
+      margin-bottom: 1rem;
+      color: var(--dark);
+    }
+    
+    p {
+      margin-bottom: 1rem;
+    }
+    
+    .container {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+    
+    /* Navigation */
+    .navbar {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: rgba(255, 255, 255, 0.95);
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+      z-index: 1000;
+      padding: 1rem 0;
+      backdrop-filter: blur(10px);
+    }
+    
+    .navbar .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    .navbar-brand {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--dark);
+    }
+    
+    .navbar-menu {
+      display: flex;
+      list-style: none;
+      gap: 2rem;
+    }
+    
+    .navbar-menu li a {
+      color: var(--secondary);
+      font-weight: 500;
+    }
+    
+    .navbar-menu li a:hover {
+      color: var(--primary);
+    }
+    
+    .mobile-menu-btn {
+      display: none;
+      background: none;
+      border: none;
+      font-size: 1.5rem;
+      color: var(--dark);
+      cursor: pointer;
+    }
+    
+    /* Hero Section */
+    .hero {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      padding-top: 60px;
+      background-color: var(--light);
+    }
+    
+    .hero-content {
+      max-width: 700px;
+    }
+    
+    .hero h1 {
+      font-size: 3.5rem;
+      margin-bottom: 1.5rem;
+      line-height: 1.2;
+    }
+    
+    .hero h1 span {
+      color: var(--primary);
+    }
+    
+    .hero p {
+      font-size: 1.25rem;
+      margin-bottom: 2rem;
+      color: var(--secondary);
+    }
+    
+    .social-links {
+      display: flex;
+      gap: 1rem;
+      margin-bottom: 2rem;
+    }
+    
+    .social-icon {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background-color: var(--light);
+      color: var(--primary);
+      font-size: 1.25rem;
+      border: 1px solid var(--border);
+      transition: all 0.3s ease;
+    }
+    
+    .social-icon:hover {
+      background-color: var(--primary);
+      color: white;
+      transform: translateY(-3px);
+    }
+    
+    .btn {
+      display: inline-block;
+      padding: 0.75rem 1.5rem;
+      background-color: var(--primary);
+      color: white;
+      border-radius: 4px;
+      font-weight: 500;
+      transition: all 0.3s ease;
+    }
+    
+    .btn:hover {
+      background-color: var(--accent);
+      color: white;
+      transform: translateY(-3px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    }
+    
+    .btn-outline {
+      background-color: transparent;
+      color: var(--primary);
+      border: 1px solid var(--primary);
+    }
+    
+    .btn-outline:hover {
+      background-color: var(--primary);
+      color: white;
+    }
+    
+    /* Sections */
+    section {
+      padding: 1rem 0;
+    }
+    
+    .section-title {
+      text-align: center;
+      margin-bottom: 3rem;
+      position: relative;
+    }
+    
+    .section-title::after {
+      content: '';
+      position: absolute;
+      bottom: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 50px;
+      height: 3px;
+      background-color: var(--primary);
+    }
+    
+    /* About Section */
+    .about-content {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+      align-items: center;
+    }
+    
+    .about-text h3 {
+      margin-bottom: 1rem;
+    }
+    
+    .about-text p {
+      margin-bottom: 1.5rem;
+    }
+    
+    .about-image img {
+      width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    }
+    
+    /* Experience Section */
+    .timeline {
+      position: relative;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    
+    .timeline::after {
+      content: '';
+      position: absolute;
+      width: 2px;
+      background-color: var(--border);
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      margin-left: -1px;
+    }
+    
+    .timeline-item {
+      position: relative;
+      width: 50%;
+      padding: 0 40px 50px 0;
+    }
+    
+    .timeline-item:nth-child(even) {
+      left: 50%;
+      padding: 0 0 50px 40px;
+    }
+    
+    .timeline-content {
+      padding: 1.5rem;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+      position: relative;
+    }
+    
+    .timeline-content::after {
+      content: '';
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background-color: white;
+      border-radius: 50%;
+      top: 15px;
+      z-index: 1;
+      box-shadow: 0 0 0 4px var(--primary);
+    }
+    
+    .timeline-item:nth-child(odd) .timeline-content::after {
+      right: -50px;
+    }
+    
+    .timeline-item:nth-child(even) .timeline-content::after {
+      left: -50px;
+    }
+    
+    .timeline-date {
+      display: inline-block;
+      padding: 0.25rem 0.75rem;
+      background-color: var(--primary);
+      color: white;
+      border-radius: 4px;
+      font-size: 0.875rem;
+      margin-bottom: 0.5rem;
+    }
+    
+    .timeline-title {
+      margin-bottom: 0.5rem;
+    }
+    
+    /* Projects Section */
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+    
+    .project-card {
+      background-color: white;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+      transition: all 0.3s ease;
+    }
+    
+    .project-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    }
+    
+    .project-image {
+      height: 200px;
+      overflow: hidden;
+    }
+    
+    .project-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: all 0.3s ease;
+    }
+    
+    .project-card:hover .project-image img {
+      transform: scale(1.1);
+    }
+    
+    .project-content {
+      padding: 1.5rem;
+    }
+    
+    .project-title {
+      margin-bottom: 0.5rem;
+    }
+    
+    .project-tech {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-top: 1rem;
+    }
+    
+    .tech-tag {
+      font-size: 0.75rem;
+      padding: 0.25rem 0.5rem;
+      background-color: var(--border);
+      border-radius: 4px;
+    }
+    
+    /* Skills Section */
+.skills-tabs {
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+}
+
+.skills-category-tabs {
+  display: flex;
+  border-bottom: 1px solid var(--border);
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.skills-category-tabs::-webkit-scrollbar {
+  display: none;
+}
+
+.tab-btn {
+  padding: 16px 24px;
+  background: none;
+  border: none;
+  font-weight: 600;
+  color: var(--secondary);
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.tab-btn:hover {
+  color: var(--primary);
+}
+
+.tab-btn.active {
+  color: var(--primary);
+}
+
+.tab-btn.active::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: var(--primary);
+}
+
+.tab-content {
+  display: none;
+  padding: 30px;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+.skills-flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.skill-badge {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100px;
+  transition: all 0.3s ease;
+}
+
+.skill-badge:hover {
+  transform: translateY(-5px);
+}
+
+.skill-icon {
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  background-color: var(--light);
+  margin-bottom: 8px;
+  font-size: 28px;
+  color: var(--primary);
+  transition: all 0.3s ease;
+}
+
+.skill-badge:hover .skill-icon {
+  background-color: var(--primary);
+  color: white;
+  box-shadow: 0 10px 15px rgba(45, 140, 163, 0.2);
+}
+
+@media (max-width: 768px) {
+  .skill-badge {
+    width: 80px;
+  }
+  
+  .skill-icon {
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+  }
+  
+  .tab-btn {
+    padding: 12px 16px;
+    font-size: 14px;
+  }
+}
+
+    
+    /* Education Section */
+    .education-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+    
+    .education-card {
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+      padding: 1.5rem;
+    }
+    
+    .education-title {
+      margin-bottom: 0.5rem;
+    }
+    
+    .education-date {
+      font-size: 0.875rem;
+      color: var(--secondary);
+      margin-bottom: 1rem;
+    }
+    
+    /* Contact Section */
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+    }
+    
+    .contact-info {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+    
+    .contact-item {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+    
+    .contact-icon {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-color: var(--primary);
+      color: white;
+      font-size: 1.25rem;
+    }
+    
+    /* Footer */
+    footer {
+      background-color: var(--dark);
+      color: white;
+      padding: 2rem 0;
+      text-align: center;
+    }
+    
+    .footer-social {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin-bottom: 1rem;
+    }
+    
+    .footer-social a {
+      color: white;
+      font-size: 1.25rem;
+      transition: all 0.3s ease;
+    }
+    
+    .footer-social a:hover {
+      color: var(--primary);
+    }
+    
+    .footer-text {
+      font-size: 0.875rem;
+      color: rgba(255, 255, 255, 0.7);
+    }
+    
+    /* Responsive */
+    @media (max-width: 992px) {
+      .about-content {
+        grid-template-columns: 1fr;
+      }
+      
+      .timeline::after {
+        left: 31px;
+      }
+      
+      .timeline-item {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 0;
+      }
+      
+      .timeline-item:nth-child(even) {
+        left: 0;
+        padding-left: 70px;
+        padding-right: 0;
+      }
+      
+      .timeline-content::after {
+        left: -40px !important;
+      }
+      
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+    
+    @media (max-width: 768px) {
+      .navbar-menu {
+        display: none;
+      }
+      
+      .mobile-menu-btn {
+        display: block;
+      }
+      
+      .hero h1 {
+        font-size: 2.5rem;
+      }
+      
+      .hero p {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="#" class="navbar-brand">Kirtan Prajapati</a>
+      <ul class="navbar-menu">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#education">Education</a></li>
+      </ul>
+      <button class="mobile-menu-btn">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="container">
+      <div class="hero-content">
+        <h1>Hi, I'm <span>Kirtan Prajapati</span></h1>
+        <p>Self-driven, quick starter, passionate AI Engineer & Full Stack Developer with a curious mind who enjoys solving complex and challenging real-world problems.</p>
+        <div class="social-links">
+          <a href="https://www.linkedin.com/in/kirtan-prajapati-6203a21b8/" class="social-icon" target="_blank">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="https://github.com/kirtanlab" class="social-icon" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+        <div class="hero-buttons">
+          <a href="#about" class="btn">Read More</a>
+          <a href="#contact" class="btn btn-outline">Contact Me</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-content">
+        <div class="about-text">
+          <p>Hello everyone! I'm an enthusiastic computer engineering graduate with a growing passion for AI and full stack development. During my studies, I've worked on several projects that have helped me build practical skills in Python, React, and machine learning technologies</p>
+          <p>I thrive on exploring emerging technologies and integrating them into practical solutions that solve real-world problems. Whether it's learning a new framework or optimizing an existing system, I am always eager to challenge myself and deliver exceptional results.</p>
+          <p>When I'm not coding, you'll find me exploring creative ideas, staying updated with tech trends, or brainstorming ways to make technology more accessible and inclusive.</p>
+          <p>I'm looking for an entry-level opportunity where I can contribute my technical skills while learning from experienced professionals. I'm ready to tackle new challenges, adapt quickly to team workflows, and grow into a valuable developer who can make meaningful contributions to innovative projects.</p>
+        </div>
+        <div class="about-highlights">
+            <h3>Key Achievements</h3>
+            <ul>
+            <li>🏆 <strong>Hackathon Success:</strong> Developed a state-winning website during the <a href="https://ssipgujarat.in/hackathon/index.php" target="_blank">SSIP 2022</a> hackathon and secured Runner-up position in Hackout '22 organized by Synapse Committee <a href="https://www.daiict.ac.in" target="_blank">DA-IICT</a>, Gujarat with SSIP.</li>
+            <li>🏠 <strong>Startup Experience:</strong> Contributed to <a href="https://www.nahar.om" target="_blank">NaharOm</a>, a fintech platform focused on conscious commerce.</li>
+            <li>📝 <strong>Publication:</strong> Published research on "Deep Learning Approaches for Crossing India Roads" in <a href="https://conferencealerts.com" target="_blank">ICWSTCSC 2023</a> (December 29, 2023), demonstrating academic contribution to the field of computer vision.</li>
+            </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience" class="section">
+    <div class="container">
+      <h2 class="section-title">Experience</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+            <div class="timeline-content">
+              <span class="timeline-date">May 2024 - Nov 2024</span>
+              <h3 class="timeline-title">Full Stack Developer</h3>
+              <p class="timeline-place"><a href="https://www.nahar.om" target="_blank">Nahar Om, The Family Office</a> | Tamil Nadu, India</p>
+              <p>My role encompassed full-stack development with expertise in financial systems and trading mechanisms.</p>
+              <p>Conducted detailed requirement gathering using agile methodology, implemented React with Redux state management, developed RESTful APIs with Django Rest Framework, designed PostgreSQL database architecture and maintaining CI/CD Pipeline with Docker containers</p>
+              <p>Additional responsibilities included creating minimalist UI integrations and maintaining weekly client communication to ensure alignment with business objectives.</p>
+            </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-content">
+            <span class="timeline-date">Jan 2023 - April 2024</span>
+            <h3 class="timeline-title">FullStack Intern</h3>
+            <p class="timeline-place"><a href="www.techelecon.com" target="_blank"> Tech Elecon</a> | Anand, India</p>
+            <p>I led critical projects with unwavering commitment, navigating tight deadlines and collaborating seamlessly with colleagues.</p>
+            <p>My role extended beyond coding, as I also provided guidance to 50+ peers on parallel projects, ensuring a cohesive and successful internship experience.</p>
+            <p>Technically, I implemented full-stack solutions using Spring Boot backend and React frontend with Redux state management, all connected to PostgreSQL databases.</p> 
+            <p>I demonstrated proficiency in translating SRS documentation into working features and integrated adaptable UI themes, including minimalist and dark mode variants, enhancing user experience across multiple platforms.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section">
+    <div class="container">
+      <h2 class="section-title">Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="project-content">
+            <h3 class="project-title">Road Crossing Assistant</h3>
+            <p>Created an assistive model for visually impaired people to safely cross roads, using Time Distributed LSTM-CNN Hybrid Model and ConvNext architecture.</p>
+            <div class="project-tech">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">TensorFlow</span>
+              <span class="tech-tag">Computer Vision</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/kirtanlab/Road-crossing-Assistant" target="_blank"><i class="fab fa-github"></i> View Source</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="project-card">
+          <div class="project-content">
+            <h3 class="project-title">ShelterHub Business</h3>
+            <p>A React Native app platform for students to find PG accommodations and for property owners to list their properties with images, videos, and location.</p>
+            <div class="project-tech">
+              <span class="tech-tag">React Native</span>
+              <span class="tech-tag">Mobile App</span>
+              <span class="tech-tag">Redux</span>
+              <span class="tech-tag">Google Maps API</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/kirtanlab/merchantApp_final" target="_blank"><i class="fab fa-github"></i> View Source</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="project-card">
+          <div class="project-content">
+            <h3 class="project-title">Restaurant Success Prediction</h3>
+            <p>Full stack website using React.js and Flask that predicts restaurant success chances using ML models and provides business insights through EDA.</p>
+            <div class="project-tech">
+              <span class="tech-tag">React.js</span>
+              <span class="tech-tag">Flask</span>
+              <span class="tech-tag">Machine Learning</span>
+              <span class="tech-tag">Data Analysis</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/kirtanlab/Restaurant-Success-Prediction" target="_blank"><i class="fab fa-github"></i> View Source</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="project-card">
+          <div class="project-content">
+            <h3 class="project-title">Canteen Management Website</h3>
+            <p>React.js web app that streamlines canteen management for Government Office, reducing overhead between orders and enabling e-payments.</p>
+            <div class="project-tech">
+              <span class="tech-tag">React.js</span>
+              <span class="tech-tag">Redux</span>
+              <span class="tech-tag">Web App</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/kirtanlab/ssip_webfinal" target="_blank"><i class="fab fa-github"></i> View Source</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+            <div class="project-content">
+              <h3 class="project-title">resume_tailoring_system</h3>
+              <p>Analyzes resumes and job descriptions, using specialized agents to extract key information and generate professionally formatted LaTeX documents that highlight relevant skills and experience for specific job applications.</p>
+              <div class="project-tech">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Streamlit</span>
+                <span class="tech-tag">LMM</span>
+                <span class="tech-tag">Parsing</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/kirtanlab/resume_tailoring_system" target="_blank"><i class="fab fa-github"></i> View Source</a>
+              </div>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="project-content">
+              <h3 class="project-title">ConnectWithMe Microservice</h3>
+              <p>ConnectWithMe is a microservices-based platform that enables users to create profiles, share projects, and connect with others based on skills, education, and interests. The platform implements clean architecture principles with a hexagonal approach, focusing on domain-driven design and clear separation of concerns.</p>
+              <div class="project-tech">
+                <span class="tech-tag">SpringBoot</span>
+                <span class="tech-tag">REST</span>
+                <span class="tech-tag">Kafka</span>
+                <span class="tech-tag">Eureka</span>
+                <span class="tech-tag">PostgreSQL</span>
+                <span class="tech-tag">Docker</span>
+                <span class="tech-tag">Zookeeper</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/kirtanlab/ConnectWithMeMicroservice" target="_blank"><i class="fab fa-github"></i> View Source</a>
+              </div>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="project-content">
+              <h3 class="project-title">Secondary Trading Platform for Recurring Revenue</h3>
+              <p>The Secondary Trading Platform is a financial ecosystem that enables investors to buy and sell fractionalized recurring revenue contracts, working alongside a primary lending platform to create a complete marketplace for invoice-based investments.</p>
+              <div class="project-tech">
+                <span class="tech-tag">Django</span>
+                <span class="tech-tag">REST</span>
+                <span class="tech-tag">Signzy</span>
+                <span class="tech-tag">Finance Payout</span>
+                <span class="tech-tag">PostgreSQL</span>
+                <span class="tech-tag">Docker</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/kirtanlab/naharom_backend" target="_blank"><i class="fab fa-github"></i> View Source</a>
+              </div>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="project-content">
+              <h3 class="project-title">Asset Management System</h3>
+              <p>The Asset Management System streamlines organizational resource tracking with comprehensive features for request workflows, employee management, and asset classification, all protected by robust JWT authentication and role-based access controls.</p>
+              <div class="project-tech">
+                <span class="tech-tag">Spring Boot</span>
+                <span class="tech-tag">REST</span>
+                <span class="tech-tag">PostgreSQL</span>
+                <span class="tech-tag">JWT</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/kirtanlab/elecon_rnd_backend" target="_blank"><i class="fab fa-github"></i> View Source</a>
+              </div>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="project-content">
+              <h3 class="project-title">Graph Caching</h3>
+              <p>The Restaurant Caching API efficiently manages high-volume data requests for restaurant systems through a robust caching implementation in Spring Boot, optimizing performance for complex data relationships while providing multiple cache provider options for customized deployment.</p>
+              <div class="project-tech">
+                <span class="tech-tag">Spring Boot</span>
+                <span class="tech-tag">REST</span>
+                <span class="tech-tag">Neo4j</span>
+                <span class="tech-tag">Caffeine, Redis</span>
+                <span class="tech-tag">JUnit</span>
+                <span class="tech-tag">Docker</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/kirtanlab/Graph_Caching" target="_blank"><i class="fab fa-github"></i> View Source</a>
+              </div>
+            </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+<section id="skills" class="section">
+    <div class="container">
+      <h2 class="section-title">Skills</h2>
+      
+      <div class="skills-tabs">
+        <div class="skills-category-tabs">
+          <button class="tab-btn active" data-target="languages">Languages & Databases</button>
+          <button class="tab-btn" data-target="libraries">Libraries</button>
+          <button class="tab-btn" data-target="frameworks">Frameworks</button>
+          <button class="tab-btn" data-target="softskill">Soft Skills</button>
+          <button class="tab-btn" data-target="other">Other</button>
+        </div>
+        
+        <div class="skills-content">
+          <div id="languages" class="tab-content active">
+            <div class="skills-flex">
+              <div class="skill-badge">
+                <div class="skill-icon"><i class="fab fa-python"></i></div>
+                <span>Python</span>
+              </div>
+              <div class="skill-badge">
+                <div class="skill-icon"><i class="fab fa-js"></i></div>
+                <span>JavaScript</span>
+              </div>
+              <div class="skill-badge">
+                <div class="skill-icon"><i class="fab fa-java"></i></div>
+                <span>Java</span>
+              </div>
+              <div class="skill-badge">
+                <div class="skill-icon"><i class="fas fa-database"></i></div>
+                <span>MySQL</span>
+              </div>
+              <div class="skill-badge">
+                <div class="skill-icon"><i class="fas fa-database"></i></div>
+                <span>PostgreSQL</span>
+              </div>
+              <div class="skill-badge">
+                <div class="skill-icon"><i class="fas fa-database"></i></div>
+                <span>Neo4j</span>
+              </div>
+            </div>
+          </div>
+          
+          <div id="libraries" class="tab-content">
+            <div class="skills-flex">
+              <div class="skill-badge">
+                <div class="skill-icon"><i class="fas fa-calculator"></i></div>
+                <span>NumPy</span>
+              </div>
+              <div class="skill-badge">
+                <div class="skill-icon"><i class="fas fa-table"></i></div>
+                <span>Pandas</span>
+              </div>
+              <div class="skill-badge">
+                <div class="skill-icon"><i class="fas fa-eye"></i></div>
+                <span>OpenCV</span>
+              </div>
+            </div>
+          </div>
+          
+          <div id="frameworks" class="tab-content">
+            <div class="skills-flex">
+              <div class="skill-badge">
+                <div class="skill-icon"><i class="fab fa-react"></i></div>
+                <span>React</span>
+              </div>
+              <div class="skill-badge">
+                <div class="skill-icon"><i class="fab fa-bootstrap"></i></div>
+                <span>Bootstrap</span>
+              </div>
+              <div class="skill-badge">
+                <div class="skill-icon"><i class="fab fa-python"></i></div>
+                <span>Django</span>
+              </div>
+              <div class="skill-badge">
+                <div class="skill-icon"><i class="fab fa-java"></i></div>
+                <span>Spring Boot</span>
+              </div>
+              <div class="skill-badge">
+                <div class="skill-icon"><i class="fas fa-brain"></i></div>
+                <span>TensorFlow</span>
+              </div>
+              <div class="skill-badge">
+                <div class="skill-icon"><i class="fas fa-fire"></i></div>
+                <span>PyTorch</span>
+              </div>
+            </div>
+          </div>
+
+          <div id="softskill" class="tab-content">
+            <div class="skills-flex">
+              <div class="skill-badge">
+                <div class="skill-icon"><i class="fas fa-comments"></i></div>
+                <span>Communication</span>
+              </div>
+              <div class="skill-badge">
+                <div class="skill-icon"><i class="fas fa-users"></i></div>
+                <span>Collaboration</span>
+              </div>
+              <div class="skill-badge">
+                <div class="skill-icon"><i class="fas fa-crown"></i></div>
+                <span>Leadership</span>
+              </div>
+              <div class="skill-badge">
+                <div class="skill-icon"><i class="fas fa-puzzle-piece"></i></div>
+                <span>Problem-solving</span>
+              </div>
+              <div class="skill-badge">
+                <div class="skill-icon"><i class="fas fa-sync-alt"></i></div>
+                <span>Adaptability</span>
+              </div>
+              <div class="skill-badge">
+                <div class="skill-icon"><i class="fas fa-clock"></i></div>
+                <span>Time management</span>
+              </div>
+            </div>
+          </div>
+          
+          <div id="other" class="tab-content">
+            <div class="skills-flex">
+              <div class="skill-badge">
+                <div class="skill-icon"><i class="fab fa-git-alt"></i></div>
+                <span>Git</span>
+              </div>
+              <div class="skill-badge">
+                <div class="skill-icon"><i class="fab fa-aws"></i></div>
+                <span>AWS</span>
+              </div>
+              <div class="skill-badge">
+                <div class="skill-icon"><i class="fab fa-docker"></i></div>
+                <span>Docker</span>
+              </div>
+              <div class="skill-badge">
+                <div class="skill-icon"><i class="fas fa-exchange-alt"></i></div>
+                <span>Kafka</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section id="education" class="section">
+    <div class="container">
+      <h2 class="section-title">Education</h2>
+      <div class="education-grid">
+        <div class="education-card">
+          <h3 class="education-title"><a href="https://www.uwindsor.ca/">University of Windsor</a></h3>
+          <p class="education-date">Windsor, Canada</p>
+          <p><strong>Degree:</strong> Master's in Applied Computing</p>
+        </div>
+        
+        <div class="education-card">
+          <h3 class="education-title"><a href="https://www.gcet.ac.in/"> G H Patel College of Engineering and Technology</a></h3>
+          <p class="education-date">Anand, India</p>
+          <p><strong>Degree:</strong> Bachelor's in Computer Engineering</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <!--section id="contact" class="section">
+    <div class="container">
+      <h2 class="section-title">Contact Me</h2>
+      <div class="contact-info">
+        <div class="contact-item">
+          <div class="contact-icon">
+            <i class="fas fa-phone"></i>
+          </div>
+          <div>
+            <h3>Phone</h3>
+            <p>+1 (226) 961-9713</p>
+          </div>
+        </div>
+        
+        <div class="contact-item">
+          <div class="contact-icon">
+            <i class="fas fa-envelope"></i>
+          </div>
+          <div>
+            <h3>Email</h3>
+            <p><a href="mailto:kirtanprajapati0804@gmail.com">kirtanprajapati0804@gmail.com</a></p>
+          </div>
+        </div>
+        
+        <div class="contact-item">
+          <div class="contact-icon">
+            <i class="fab fa-github"></i>
+          </div>
+          <div>
+            <h3>GitHub</h3>
+            <p><a href="https://github.com/kirtanlab" target="_blank">github.com/kirtanlab</a></p>
+          </div>
+        </div>
+        
+        <div class="contact-item">
+          <div class="contact-icon">
+            <i class="fab fa-linkedin-in"></i>
+          </div>
+          <div>
+            <h3>LinkedIn</h3>
+            <p><a href="https://www.linkedin.com/in/kirtan-prajapati-6203a21b8/" target="_blank">linkedin.com/in/kirtan-prajapati-6203a21b8/</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-social">
+        <a href="https://www.linkedin.com/in/kirtan-prajapati-6203a21b8/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://github.com/kirtanlab" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="mailto:kirtanprajapati0804@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+        <a href="tel:+12269619713" target="_blank"><i class="fas fa-phone"></i></a>
+      </div>
+      <p class="footer-text">&copy; 2025 Kirtan Prajapati. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script>
+    // Mobile menu toggle
+    document.querySelector('.mobile-menu-btn').addEventListener('click', function() {
+      const navbarMenu = document.querySelector('.navbar-menu');
+      navbarMenu.style.display = navbarMenu.style.display === 'flex' ? 'none' : 'flex';
+    });
+    
+    // Smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        
+        const targetId = this.getAttribute('href');
+        const targetElement = document.querySelector(targetId);
+        
+        window.scrollTo({
+          top: targetElement.offsetTop - 70,
+          behavior: 'smooth'
+        });
+        
+        // Close mobile menu if open
+        const navbarMenu = document.querySelector('.navbar-menu');
+        if (window.innerWidth <= 768 && navbarMenu.style.display === 'flex') {
+          navbarMenu.style.display = 'none';
+        }
+      });
+    });
+
+    // Tab functionality for skills section
+    document.addEventListener('DOMContentLoaded', function() {
+    const tabButtons = document.querySelectorAll('.tab-btn');
+    const tabContents = document.querySelectorAll('.tab-content');
+    
+    tabButtons.forEach(button => {
+        button.addEventListener('click', function() {
+        // Remove active class from all buttons and contents
+        tabButtons.forEach(btn => btn.classList.remove('active'));
+        tabContents.forEach(content => content.classList.remove('active'));
+        
+        // Add active class to clicked button
+        this.classList.add('active');
+        
+        // Show corresponding content
+        const target = this.getAttribute('data-target');
+        document.getElementById(target).classList.add('active');
+        });
+    });
+    });
+  </script>
+</body>
+
+</html>
