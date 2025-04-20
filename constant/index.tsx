@@ -8,7 +8,8 @@ import Cova from "@/public/images/Projects/RestaurantAPI.png";
 import DLHS from "@/public/images/Projects/asset.png";
 import SaySwitch from "@/public/images/Projects/ResumeParsing.png";
 
-import Experience from "@/public/images/Dock/projects.svg"; 
+import Education from "@/public/images/Dock/graduation-cap.png";
+import Experience from "@/public/images/Dock/experience.png"; 
 import Stack from "@/public/images/Dock/stack.svg";
 import Projects from "@/public/images/Dock/projects.svg";
 import LinkedIn from "@/public/images/Dock/linkedIn.svg";
@@ -112,6 +113,11 @@ export const dockLinks = [
     to: "/experience",
     text: "Experience",
     image: Experience,
+  },
+  {
+    to: "/education",
+    text: "Education",
+    image: Education,
   },
   {
     to: "/stacks",
