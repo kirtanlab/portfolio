@@ -29,7 +29,7 @@ const Landing = () => {
 
       <div className="w-11/12 md:w-9/12 mx-auto grid grid-cols-1 md:grid-cols-2 gap-4 text-xl md:text-3xl place-content-center">
         <p>&#187; Freelancer</p>
-        <p>&#187; FullStack Intern</p>
+        <p>&#187; Software Developer</p>
         <p>&#187; Computer Vision Practitioner </p>
         <p>&#187; University of Windsor Student</p>
       </div>

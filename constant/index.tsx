@@ -1,9 +1,12 @@
-import Godan from "@/public/images/Projects/godan.png";
-import Spaceet from "@/public/images/Projects/spaceet.png";
-import Aview from "@/public/images/Projects/aview.png";
-import Cova from "@/public/images/Projects/cova.png";
-import DLHS from "@/public/images/Projects/d-lhs.png";
-import SaySwitch from "@/public/images/Projects/sayswitch.png";
+import Godan from "@/public/images/Projects/ConnectWithMe.png";
+import Socket from "@/public/images/Projects/Socket.png";
+import Airbnb from "@/public/images/Projects/AirbnbCloning.png";
+import rainbow from "@/public/images/Projects/rainbow.png";
+import Spaceet from "@/public/images/Projects/ASP.png";
+import Aview from "@/public/images/Projects/NaharOmSTP.png";
+import Cova from "@/public/images/Projects/RestaurantAPI.png";
+import DLHS from "@/public/images/Projects/asset.png";
+import SaySwitch from "@/public/images/Projects/ResumeParsing.png";
 
 import Stack from "@/public/images/Dock/stack.svg";
 import Projects from "@/public/images/Dock/projects.svg";
@@ -58,21 +61,21 @@ export const data = [
   {
     heading:
       "These Java TCP socket programming projects demonstrate fundamental client-server communication patterns using NetBeans IDE. From basic date retrieval and chat functionality to more complex operations like file transfers and object serialization, these examples provide a practical foundation for understanding network programming with Java Sockets.",
-    img: Godan,
+    img: Socket,
     skills: "",
     link: "https://github.com/kirtanlab/Socket_JAVA_Practice",
   },
   {
     heading:
       "This project is a production-grade, full-stack clone of Airbnb, designed to demonstrate deep understanding of modern web and mobile application development, scalable backend architecture, and real-time systems. The application supports both web and mobile clients with a shared codebase for business logic, validation, and API integration.",
-    img: Godan,
+    img: Airbnb,
     skills: "",
     link: "https://github.com/kirtanlab/Find_Rental",
   },
   {
     heading:
       "RainbowText is a minimal Flask + React web application designed to demonstrate a fully automated containerized deployment pipeline using Docker Compose and AWS ECS Fargate. While the app itself renders a simple rainbow-colored animated text page, the focus is on teaching infrastructure-as-code, CI/CD, and cloud-native deployment workflows.",
-    img: Godan,
+    img: rainbow,
     skills: "",
     link: "https://github.com/kirtanlab/AutoDeply_AWS",
   },

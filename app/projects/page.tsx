@@ -16,7 +16,7 @@ const Projects = () => {
             key={i}
           >
             <div className=" w-full">
-              <p className="mb-4 h-[5rem] text-sm md:text-base">
+              <p className="mb-1 h-[9rem] text-sm md:text-base">
                 {card.heading}
               </p>
               <Image
@@ -27,7 +27,7 @@ const Projects = () => {
               <p className="text-sm my-8 text-center font-medium">
                 {card.skills}
               </p>
-              <Button text="Visit Site" />
+              <Button text="View Source" />
             </div>
           </a>
         ))}

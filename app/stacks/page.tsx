@@ -4,24 +4,20 @@ const Stacks = () => {
       title: "STACKS",
       history: [
         {
-          header: "Languages",
-          language: "JavaScript, TypeScript, Python, GoLang",
+          header: "Programming Languages",
+          language: "JavaScript, TypeScript, Python, GoLang, Socket, C++, Java, Shell, Bash, SQL",
         },
         {
-          header: "Frontend Frameworks",
-          language: "React JS, Next JS, Angular JS",
-        },
-        {
-          header: "Backend Frameworks",
-          language: "Express JS, Nest JS, Flask, Django, Apollo GraphQL",
+          header: "Frameworks",
+          language: "React, Next JS, Bootstrap, Django, Spring Boot, TensorFlow, PyTorch, Keras, JAX, Steamlit",
         },
         {
           header: "Databases",
-          language: "MySQL, MongoDB, Redis, Firebase, DynamoDB",
+          language: "MySQL, PostgreSQL, Neo4j, MongoDB, Redis",
         },
         {
-          header: "APIS",
-          language: "REST Api, GraphQL, Websocket",
+          header: "Libraries",
+          language: "NumPy, Pandas, OpenCV, kafka, TensorRT, Spacy, Hugging face, OpenVINO, SWR, Zod, Tanstack, Spring Data JPA, Spring Security, Swagger-ui, Spring Cloud",
         },
       ],
     },
@@ -29,20 +25,20 @@ const Stacks = () => {
       title: "MORE STACKS",
       history: [
         {
+          header: "APIS",
+          language: "REST Api, GraphQL, Websocket",
+        },
+        {
           header: "Devops",
-          language: "AWS Cloud, C-PANEL, Google Cloud Platform",
+          language: "Git, AWS, Docker, Kubernetes, Linux",
         },
         {
-          header: "Machine Learning",
-          language: "TensorFlow, NumPy, NLTK",
+          header: "Tools",
+          language: "Jupyter Notebook, Google Colab, Amazon SageMaker, Azure Machine Learning, Cursor, Render, Vercel, Github",
         },
         {
-          header: "Version Control",
-          language: "Git, GitHub, GitLab",
-        },
-        {
-          header: "Others",
-          language: "Solidity, Ether JS",
+          header: "Soft Skills",
+          language: "Communication, Collaboration, Leadership, Problem-solving, Adaptability, Time management",
         },
       ],
     },
