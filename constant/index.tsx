@@ -15,45 +15,66 @@ import GitHub from "@/public/images/Dock/github-dark.png";
 export const data = [
   {
     heading:
-      "Aview works with the top translators and voiceover talent so that you can quickly grow your international influence, A-View at a time.",
+      "The Secondary Trading Platform is a financial ecosystem that enables investors to buy and sell fractionalized recurring revenue contracts, working alongside a primary lending platform to create a complete marketplace for invoice-based investments.",
     img: Aview,
-    skills: "Next JS • Node JS • AWS • Redis • Firebase • Python",
-    link: "https://aviewint.com",
+    skills: "Django • REST • Signzy • Finance Payout • PostgreSQL • Docker",
+    link: "https://github.com/kirtanlab/naharom_backend",
   },
   {
     heading:
-      "COVA gives you control of your wealth and ensures your assets never become unclaimed assets in the event of an eventuality.",
+      "The Restaurant Caching API efficiently manages high-volume data requests for restaurant systems through a robust caching implementation in Spring Boot, optimizing performance for complex data relationships while providing multiple cache provider options for customized deployment.",
     img: Cova,
-    skills: "React • TypeScript • GraphQL • SCSS • NestJS • AWS",
-    link: "https://getcova.com",
+    skills: "Spring Boot • REST • Neo4j • Caffeine • Redis • JUnit • Docker",
+    link: "https://github.com/kirtanlab/Graph_Caching",
   },
   {
     heading:
-      "A complete feature - rich payment solution for both offline and online acquiring",
+      "Analyzes resumes and job descriptions, using specialized agents to extract key information and generate professionally formatted LaTeX documents that highlight relevant skills and experience for specific job applications.",
     img: SaySwitch,
-    skills: "Next JS • Node JS • Tailwind • MySQL",
-    link: "https://www.sayswitchgroup.com",
+    skills: "Python • Streamlit • LMM • Parsing",
+    link: "https://github.com/kirtanlab/resume_tailoring_system",
   },
   {
     heading:
-      "Grow your business, D-LHS will take care of your Logistics and Haulage",
+      "The Asset Management System streamlines organizational resource tracking with comprehensive features for request workflows, employee management, and asset classification, all protected by robust JWT authentication and role-based access controls.",
     img: DLHS,
-    skills: "Next JS • Javascript • Tailwind • ExpressJS",
-    link: "https://d-lhs.co",
+    skills: "Spring Boot • REST • PostgreSQL • JWT",
+    link: "https://github.com/kirtanlab/elecon_rnd_backend",
   },
   {
     heading:
-      "Spaceet provides a seamless user experience for apartment listing and short let bookings.",
+      "Distributed File System is a project designed to manage and distribute files across multiple servers, providing a seamless user experience. The system consists of three different servers (smain.c, spdf.c, and stext.c) and one client program",
     img: Spaceet,
-    skills: "React JS • Node JS • CSS",
-    link: "https://spaceet.com",
+    skills: "",
+    link: "https://github.com/kirtanlab/ASP_Project",
   },
   {
     heading:
-      "Designing a parcel delivery experience for a Nigeria based company",
+      "ConnectWithMe is a microservices-based platform that enables users to create profiles, share projects, and connect with others based on skills, education, and interests. The platform implements clean architecture principles with a hexagonal approach, focusing on domain-driven design and clear separation of concerns.",
     img: Godan,
-    skills: "Next JS • Firebase • Tailwind",
-    link: "https://www.figma.com/file/LWFK2EBSjdCbCZfXg3ciV7/GoDan?type=design&node-id=0-1&t=6AOJXO1ZlM2HgUfN-0",
+    skills: "SpringBoot • REST • Kafka • Eureka • PostgreSQL • Docker • Zookeeper",
+    link: "https://github.com/kirtanlab/ConnectWithMeMicroservice",
+  },
+  {
+    heading:
+      "These Java TCP socket programming projects demonstrate fundamental client-server communication patterns using NetBeans IDE. From basic date retrieval and chat functionality to more complex operations like file transfers and object serialization, these examples provide a practical foundation for understanding network programming with Java Sockets.",
+    img: Godan,
+    skills: "",
+    link: "https://github.com/kirtanlab/Socket_JAVA_Practice",
+  },
+  {
+    heading:
+      "This project is a production-grade, full-stack clone of Airbnb, designed to demonstrate deep understanding of modern web and mobile application development, scalable backend architecture, and real-time systems. The application supports both web and mobile clients with a shared codebase for business logic, validation, and API integration.",
+    img: Godan,
+    skills: "",
+    link: "https://github.com/kirtanlab/Find_Rental",
+  },
+  {
+    heading:
+      "RainbowText is a minimal Flask + React web application designed to demonstrate a fully automated containerized deployment pipeline using Docker Compose and AWS ECS Fargate. While the app itself renders a simple rainbow-colored animated text page, the focus is on teaching infrastructure-as-code, CI/CD, and cloud-native deployment workflows.",
+    img: Godan,
+    skills: "",
+    link: "https://github.com/kirtanlab/AutoDeply_AWS",
   },
 ];
 
@@ -89,13 +110,13 @@ export const dockLinks = [
     image: Stack,
   },
   {
-    to: "https://github.com/Vicopem01",
+    to: "https://github.com/kirtanlab/",
     text: "GitHub",
     external: true,
     image: GitHub,
   },
   {
-    to: "https://www.linkedin.com/in/victor-ogunjobi/",
+    to: "https://www.linkedin.com/in/kirtan-prajapati-6203a21b8/",
     text: "LinkedIn",
     external: true,
     image: LinkedIn,
@@ -107,7 +128,7 @@ export const dockLinks = [
   //   image: Twitter,
   // },
   {
-    to: "mailto:vicopem@gmail.com?subject=Hi%Victor&body=I%20saw%20your%20portfolio%20and%20",
+    to: "mailto:kirtanprajapati0804@gmail.com?subject=Hi%Victor&body=I%20saw%20your%20portfolio%20and%20",
     text: "Email",
     external: true,
     image: Mail,

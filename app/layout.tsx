@@ -40,10 +40,10 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
   return (
     <html lang="en">
       <head>
-        <title>Victor O ~ Software Developer</title>
+        <title>Kirtan Prajapati ~ Software Developer</title>
         <meta
           name="description"
-          content="Full stack developer ~ Web and blockchain security enthusiast"
+          content="Full stack developer ~ Software and AI/ML  enthusiast"
         />
       </head>
       <body
