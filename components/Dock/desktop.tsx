@@ -4,7 +4,7 @@ import { ThemeContext } from "@/context";
 import Image from "next/image";
 import { Dark, dockLinks } from "@/constant";
 import Link from "next/link";
-import Avatar from "@/public/images/Dock/Kirtan.png";
+import Avatar from "@/public/images/Dock/avatar.png";
 import { useRouter } from "next/navigation";
 
 const DesktopDock = () => {

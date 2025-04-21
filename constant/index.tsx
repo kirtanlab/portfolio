@@ -10,6 +10,7 @@ import SaySwitch from "@/public/images/Projects/ResumeParsing.png";
 
 import Education from "@/public/images/Dock/graduation-cap.png";
 import Experience from "@/public/images/Dock/experience.png"; 
+import publications from "@/public/images/Dock/research.png"; 
 import Stack from "@/public/images/Dock/stack.svg";
 import Projects from "@/public/images/Dock/projects.svg";
 import LinkedIn from "@/public/images/Dock/linkedIn.svg";
@@ -113,6 +114,11 @@ export const dockLinks = [
     to: "/experience",
     text: "Experience",
     image: Experience,
+  },
+  {
+    to: "/publications",
+    text: "Publications",
+    image: publications,
   },
   {
     to: "/education",
