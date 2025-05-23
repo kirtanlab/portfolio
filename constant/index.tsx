@@ -20,7 +20,15 @@ import GitHub from "@/public/images/Dock/github-dark.png";
 
 export const data = [
   {
-    heading: "Secondary Trading Ecosystem for Invoice Investments",
+    heading: " Microservice based - Order Management Platform",
+    description:
+      "Developed 12+ REST APIs in Go (Golang) to support core logistics and e-commerce workflows, following TDD principles. Applied JWT-based role authentication and implemented schema validation to support scalable, reliable, and secure database operations. Improved query reliability and backend performance by 35% using Google BigQuery for analytics reporting integration.",
+    img: Aview,
+    skills: "GoLang • Gin • PostgreSQL • REST APIs • JWT • air",
+    link: "https://github.com/kirtanlab/naharom_backend",
+  },
+  {
+    heading: "Invoice X - Trading Platform",
     description:
       "The Secondary Trading Platform is a financial ecosystem that enables investors to buy and sell fractionalized recurring revenue contracts, working alongside a primary lending platform to create a complete marketplace for invoice-based investments.",
     img: Aview,
