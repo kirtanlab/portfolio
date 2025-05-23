@@ -55,7 +55,7 @@ const Experience = () => {
               </div>
               <p className="text-lg font-medium mb-2">{experience.position}</p>
               <ul className="list-disc pl-5 mb-4 space-y-2">
-                {experience.description.map((point, i) => (
+                {experience?.description && experience.description.map((point, i) => (
                   <li key={i} className="text-sm md:text-base">{point}</li>
                 ))}
               </ul>
