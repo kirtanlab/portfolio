@@ -16,10 +16,11 @@ const Projects = () => {
             key={i}
           >
             <div className=" w-full">
-              <p className="mb-1 h-[9rem] text-sm md:text-base">
+              <p className="mb-1 h-[2rem] text-sm md:text-base font-bold underline">
                 {card.heading}
               </p>
-              <p className="mb-1 h-[9rem] text-sm md:text-base">
+
+              <p className="mb-1 h-[6rem] text-sm md:text-base">
                 {card.description}
               </p>
               <Image
