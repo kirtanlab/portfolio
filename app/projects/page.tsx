@@ -19,6 +19,9 @@ const Projects = () => {
               <p className="mb-1 h-[9rem] text-sm md:text-base">
                 {card.heading}
               </p>
+              <p className="mb-1 h-[9rem] text-sm md:text-base">
+                {card.description}
+              </p>
               <Image
                 src={card.img}
                 alt=""

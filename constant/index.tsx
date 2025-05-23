@@ -9,8 +9,8 @@ import DLHS from "@/public/images/Projects/asset.png";
 import SaySwitch from "@/public/images/Projects/ResumeParsing.png";
 
 import Education from "@/public/images/Dock/graduation-cap.png";
-import Experience from "@/public/images/Dock/experience.png"; 
-import publications from "@/public/images/Dock/research.png"; 
+import Experience from "@/public/images/Dock/experience.png";
+import publications from "@/public/images/Dock/research.png";
 import Stack from "@/public/images/Dock/stack.svg";
 import Projects from "@/public/images/Dock/projects.svg";
 import LinkedIn from "@/public/images/Dock/linkedIn.svg";
@@ -20,63 +20,73 @@ import GitHub from "@/public/images/Dock/github-dark.png";
 
 export const data = [
   {
-    heading:
+    heading: "Secondary Trading Ecosystem for Invoice Investments",
+    description:
       "The Secondary Trading Platform is a financial ecosystem that enables investors to buy and sell fractionalized recurring revenue contracts, working alongside a primary lending platform to create a complete marketplace for invoice-based investments.",
     img: Aview,
     skills: "Django • REST • Signzy • Finance Payout • PostgreSQL • Docker",
     link: "https://github.com/kirtanlab/naharom_backend",
   },
   {
-    heading:
+    heading: "Graph-Based Caching API for Restaurant Data Systems",
+    description:
       "The Restaurant Caching API efficiently manages high-volume data requests for restaurant systems through a robust caching implementation in Spring Boot, optimizing performance for complex data relationships while providing multiple cache provider options for customized deployment.",
     img: Cova,
     skills: "Spring Boot • REST • Neo4j • Caffeine • Redis • JUnit • Docker",
     link: "https://github.com/kirtanlab/Graph_Caching",
   },
   {
-    heading:
+    heading: "AI-Powered Resume Tailoring and LaTeX Generation System",
+    description:
       "Analyzes resumes and job descriptions, using specialized agents to extract key information and generate professionally formatted LaTeX documents that highlight relevant skills and experience for specific job applications.",
     img: SaySwitch,
     skills: "Python • Streamlit • LMM • Parsing",
     link: "https://github.com/kirtanlab/resume_tailoring_system",
   },
   {
-    heading:
+    heading: "Role-Based JWT Asset Management System",
+    description:
       "The Asset Management System streamlines organizational resource tracking with comprehensive features for request workflows, employee management, and asset classification, all protected by robust JWT authentication and role-based access controls.",
     img: DLHS,
     skills: "Spring Boot • REST • PostgreSQL • JWT",
     link: "https://github.com/kirtanlab/elecon_rnd_backend",
   },
   {
-    heading:
+    heading: "Distributed File System with Multi-Server Architecture",
+    description:
       "Distributed File System is a project designed to manage and distribute files across multiple servers, providing a seamless user experience. The system consists of three different servers (smain.c, spdf.c, and stext.c) and one client program",
     img: Spaceet,
     skills: "",
     link: "https://github.com/kirtanlab/ASP_Project",
   },
   {
-    heading:
+    heading: "ConnectWithMe: Domain-Driven Microservices Social Network",
+    description:
       "ConnectWithMe is a microservices-based platform that enables users to create profiles, share projects, and connect with others based on skills, education, and interests. The platform implements clean architecture principles with a hexagonal approach, focusing on domain-driven design and clear separation of concerns.",
     img: Godan,
-    skills: "SpringBoot • REST • Kafka • Eureka • PostgreSQL • Docker • Zookeeper",
+    skills:
+      "SpringBoot • REST • Kafka • Eureka • PostgreSQL • Docker • Zookeeper",
     link: "https://github.com/kirtanlab/ConnectWithMeMicroservice",
   },
   {
-    heading:
+    heading: "Java Socket Programming Suite for Network Communication",
+    description:
       "These Java TCP socket programming projects demonstrate fundamental client-server communication patterns using NetBeans IDE. From basic date retrieval and chat functionality to more complex operations like file transfers and object serialization, these examples provide a practical foundation for understanding network programming with Java Sockets.",
     img: Socket,
     skills: "",
     link: "https://github.com/kirtanlab/Socket_JAVA_Practice",
   },
   {
-    heading:
+    heading: "Full-Stack Airbnb Clone with Cross-Platform Support",
+    description:
       "This project is a production-grade, full-stack clone of Airbnb, designed to demonstrate deep understanding of modern web and mobile application development, scalable backend architecture, and real-time systems. The application supports both web and mobile clients with a shared codebase for business logic, validation, and API integration.",
     img: Airbnb,
     skills: "",
     link: "https://github.com/kirtanlab/Find_Rental",
   },
   {
-    heading:
+    heading: "Automated Cloud Deployment with AWS ECS & Docker",
+    description:
       "RainbowText is a minimal Flask + React web application designed to demonstrate a fully automated containerized deployment pipeline using Docker Compose and AWS ECS Fargate. While the app itself renders a simple rainbow-colored animated text page, the focus is on teaching infrastructure-as-code, CI/CD, and cloud-native deployment workflows.",
     img: rainbow,
     skills: "",
