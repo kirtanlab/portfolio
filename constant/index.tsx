@@ -25,7 +25,7 @@ export const data = [
       "Developed 12+ REST APIs in Go (Golang) to support core logistics and e-commerce workflows, following TDD principles. Applied JWT-based role authentication and implemented schema validation to support scalable, reliable, and secure database operations. Improved query reliability and backend performance by 35% using Google BigQuery for analytics reporting integration.",
     img: Aview,
     skills: "GoLang • Gin • PostgreSQL • REST APIs • JWT • air",
-    link: "https://github.com/kirtanlab/naharom_backend",
+    link: "https://github.com/kirtanlab/Order-Delivery-Service",
   },
   {
     heading: "Invoice X - Trading Platform",
