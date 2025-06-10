@@ -7,6 +7,7 @@ import Aview from "@/public/images/Projects/NaharOmSTP.png";
 import Cova from "@/public/images/Projects/RestaurantAPI.png";
 import DLHS from "@/public/images/Projects/asset.png";
 import SaySwitch from "@/public/images/Projects/ResumeParsing.png";
+import Golang from "@/public/images/Projects/system-flow-order-service.png";
 
 import Education from "@/public/images/Dock/graduation-cap.png";
 import Experience from "@/public/images/Dock/experience.png";
@@ -23,7 +24,7 @@ export const data = [
     heading: " Microservice based - Order Management Platform",
     description:
       "Developed 12+ REST APIs in Go (Golang) to support core logistics and e-commerce workflows, following TDD principles. Applied JWT-based role authentication and implemented schema validation to support scalable, reliable, and secure database operations. Improved query reliability and backend performance by 35% using Google BigQuery for analytics reporting integration.",
-    img: Aview,
+    img: Golang,
     skills: "GoLang • Gin • PostgreSQL • REST APIs • JWT • air",
     link: "https://github.com/kirtanlab/Order-Delivery-Service",
   },
